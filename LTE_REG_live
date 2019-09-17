@@ -1,0 +1,416 @@
+SIP 1:
+13:09:25.458	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 1743
+   SIP Message Logged Bytes = 1744
+   Message ID = IMS_SIP_REGISTER
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 255
+   SIP Call ID = 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = REGISTER sip:ims.mnc045.mcc404.3gppnetwork.org SIP/2.0
+   
+From: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493482296
+To: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>
+CSeq: 345998638 REGISTER
+
+Call-ID: 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+
+Via: SIP/2.0/TCP [2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:5060;branch=z9hG4bK1614205454
+Max-Forwards: 70
+
+Route: <sip:[2401:4900:c0:1::145]:5060;lr>
+
+Authorization: 
+Digest 
+uri="sip:ims.mnc045.mcc404.3gppnetwork.org",
+username="404450969854741@ims.mnc045.mcc404.3gppnetwork.org",
+response="",
+realm="ims.mnc045.mcc404.3gppnetwork.org",
+nonce=""
+
+Expires: 600000
+Require: sec-agree
+Proxy-Require: sec-agree
+Supported: path,sec-agree
+Allow: INVITE,BYE,CANCEL,ACK,NOTIFY,UPDATE,PRACK,INFO,MESSAGE,OPTIONS
+
+User-Agent: AUM-AL20
+
+Security-Client:
+ipsec-3gpp; alg=hmac-md5-96; ealg=des-ede3-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-md5-96; ealg=aes-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-md5-96; ealg=null; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-sha-1-96; ealg=des-ede3-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-sha-1-96; ealg=aes-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-sha-1-96; ealg=null; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902
+
+Contact: 
+<sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:5060>;
++sip.instance="<urn:gsma:imei:86768503-007155-0>";
++g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";
++g.3gpp.smsip;
+audio;
+g.3gpp.nw-init-ussi;
+video;
++g.3gpp.accesstype="cellular2"
+
+Content-Length: 0
+
+
+}
+ SIP2:
+ 13:09:25.767	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 753
+   SIP Message Logged Bytes = 754
+   Message ID = IMS_SIP_REGISTER
+   Response Code = UNAUTHORIZED (401)
+   CM Call ID = 255
+   SIP Call ID = 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = SIP/2.0 401 Unauthorized
+From: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493482296
+To: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>;tag=1100461447
+CSeq: 345998638 REGISTER
+
+Call-ID: 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+
+Via: SIP/2.0/TCP [2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:5060;received=2401:4900:31b6:617a:e4f6:2dee:c155:1b6f;branch=z9hG4bK1614205454
+
+WWW-Authenticate: 
+Digest realm="ims.mnc045.mcc404.3gppnetwork.org",
+   nonce="8MJMBcXGCs52eeiiB5fdvuvqDBqyMgAAX81Q6+sYYDEzNDZiMTk2ZQ==",
+   algorithm=AKAv1-MD5,
+   qop="auth"
+Security-Server: 
+ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=4813423; spi-s=4813422; port-c=32797; port-s=6000
+
+Server: Nokia-HPSS/3.0.3
+
+Content-Length: 0
+
+
+}
+SIP3;
+13:09:25.769	[0x1832]	IMS Registration
+Version = 1
+Version 1 {
+   Registration Type = Initial
+   Call Id Length = 62
+   Call Id = 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Request Uri Length = 38
+   Request Uri = sip:ims.mnc045.mcc404.3gppnetwork.org
+   To Length = 56
+   To = <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>
+   Result = Unauthorized
+}
+SIP4:
+13:09:26.214	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 2080
+   SIP Message Logged Bytes = 2081
+   Message ID = IMS_SIP_REGISTER
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 255
+
+   SIP Call ID = 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = REGISTER sip:ims.mnc045.mcc404.3gppnetwork.org SIP/2.0
+   
+From: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493483072
+To: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>
+CSeq: 345998639 REGISTER
+
+Call-ID: 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+
+Via: SIP/2.0/TCP [2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902;branch=z9hG4bK2305429611
+
+Max-Forwards: 70
+
+Route: <sip:[2401:4900:c0:1::145]:6000;lr>
+
+P-Access-Network-Info: 3GPP-E-UTRAN-TDD; utran-cell-id-3gpp=4044520AD012E201
+
+Security-Verify: ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=4813423; spi-s=4813422; port-c=32797; port-s=6000
+
+Content-Length: 0
+Authorization: 
+Digest username="404450969854741@ims.mnc045.mcc404.3gppnetwork.org",
+realm="ims.mnc045.mcc404.3gppnetwork.org",
+uri="sip:ims.mnc045.mcc404.3gppnetwork.org",
+qop=auth,
+nonce="8MJMBcXGCs52eeiiB5fdvuvqDBqyMgAAX81Q6+sYYDEzNDZiMTk2ZQ==",
+nc=00000001,cnonce="2493482263",algorithm=AKAv1-MD5,
+response="f9c54ccb931b01bc96c6ca3dec977201"
+
+Expires: 600000
+Require: sec-agree
+Proxy-Require: sec-agree
+Supported: path,sec-agree
+Allow: INVITE,BYE,CANCEL,ACK,NOTIFY,UPDATE,PRACK,INFO,MESSAGE,OPTIONS
+
+User-Agent: AUM-AL20
+
+Security-Client: 
+ipsec-3gpp; alg=hmac-md5-96; ealg=des-ede3-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-md5-96; ealg=aes-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-md5-96; ealg=null; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-sha-1-96; ealg=des-ede3-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-sha-1-96; ealg=aes-cbc; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902,
+ipsec-3gpp; alg=hmac-sha-1-96; ealg=null; spi-c=3625563411; spi-s=3464325113; port-c=8003; port-s=8902
+
+
+Contact: 
+<sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902>;
++g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";
++g.3gpp.smsip;audio;g.3gpp.nw-init-ussi;
+video;
++sip.instance="<urn:gsma:imei:86768503-007155-0>";
++g.3gpp.accesstype="cellular2"
+
+
+}
+SIP5:
+13:09:26.379	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 1358
+   SIP Message Logged Bytes = 1359
+   Message ID = IMS_SIP_REGISTER
+   Response Code = OK (200)
+   CM Call ID = 255
+   SIP Call ID = 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = SIP/2.0 200 OK
+   
+From: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493483072
+To: <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>;tag=265218651
+
+CSeq: 345998639 REGISTER
+
+Call-ID: 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+
+Via: SIP/2.0/TCP [2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902;received=2401:4900:31b6:617a:e4f6:2dee:c155:1b6f;branch=z9hG4bK2305429611
+
+Contact: 
+<sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902>;
++g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";
++g.3gpp.smsip;audio;g.3gpp.nw-init-ussi;
+video;
++sip.instance="<urn:gsma:imei:86768503-007155-0>";
++g.3gpp.accesstype="cellular2";
+expires=7200
+
+Path: <sip:pcgw-prim.i2.kka07.ims.mnc045.mcc404.3gppnetwork.org:5060;lr;ottag=ue_term;bidx=307324566;access-type=3GPP-E-UTRAN-FDD>
+
+Service-Route: <sip:pcgw-prim.i2.kka07.ims.mnc045.mcc404.3gppnetwork.org:6000;lr;bidx=0>
+Service-Route: <sip:originating@skkwhncfb00-mw.ims.mnc045.mcc404.3gppnetwork.org:5090;reg-id=2I1568293766218964;lskpmc=S2I;lr;ms_rest_id=S2I5d7a4385>
+
+P-Associated-URI: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+P-Associated-URI: <tel:+917899632137>
+
+Content-Length: 0
+Feature-Caps: *;+g.3gpp.atcf="<tel:+919845086416>"
+Server: Nokia-HPSS/3.0.3
+
+P-com.siemens.maximum-chat-size: 1300
+P-com.siemens.maximum-IM-size: 1300
+P-com.siemens.chat: direct
+
+
+}
+SIP6:
+13:09:26.380	[0x1832]	IMS Registration
+Version = 1
+Version 1 {
+   Registration Type = Initial
+   Call Id Length = 62
+   Call Id = 2493482286_2327714204@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Request Uri Length = 38
+   Request Uri = sip:ims.mnc045.mcc404.3gppnetwork.org
+   To Length = 56
+   To = <sip:404450969854741@ims.mnc045.mcc404.3gppnetwork.org>
+   Result = OK
+}
+
+
+
+
+
+SIP7:
+13:09:26.399	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 1089
+   SIP Message Logged Bytes = 1090
+   Message ID = IMS_SIP_SUBSCRIBE
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 255
+
+   SIP Call ID = 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = SUBSCRIBE sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org SIP/2.0
+
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493483261
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+
+CSeq: 345999607 SUBSCRIBE
+
+Call-ID: 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+
+Via: SIP/2.0/UDP [2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902;branch=z9hG4bK339905463
+
+Max-Forwards: 70
+
+Route: 
+<sip:[2401:4900:c0:1::145]:6000;lr>,// P-CCSF
+<sip:pcgw-prim.i2.kka07.ims.mnc045.mcc404.3gppnetwork.org:6000;lr;bidx=0>,// I-CSCF
+<sip:originating@skkwhncfb00-mw.ims.mnc045.mcc404.3gppnetwork.org:5090;reg-id=2I1568293766218964;lskpmc=S2I;lr;ms_rest_id=S2I5d7a4385> // S-CSCF
+
+P-Access-Network-Info: 3GPP-E-UTRAN-TDD; utran-cell-id-3gpp=4044520AD012E201
+
+Security-Verify: 
+ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=4813423; spi-s=4813422; port-c=32797; port-s=6000
+
+Event: reg
+Content-Length: 0
+
+Require: sec-agree
+Proxy-Require: sec-agree
+
+Contact: 
+<sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902> // UE SIP Client IP addres and port 
+P-Preferred-Identity: 
+<sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org> //UE SIP Client Mobile number
+
+Expires: 600000
+
+
+}
+SIP8:
+13:09:26.462	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 657
+   SIP Message Logged Bytes = 658
+   Message ID = IMS_SIP_SUBSCRIBE
+   Response Code = OK (200)
+   CM Call ID = 255
+   SIP Call ID = 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = SIP/2.0 200 OK
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493483261
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=511685114
+
+CSeq: 345999607 SUBSCRIBE
+
+Call-ID: 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+
+Via: SIP/2.0/UDP [2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902;received=2401:4900:31b6:617a:e4f6:2dee:c155:1b6f;branch=z9hG4bK339905463
+
+Expires: 86400
+
+Contact: <sip:skkwhncfb00-mw.ims.mnc045.mcc404.3gppnetwork.org:5090;lskpmc=S2I>
+
+Record-Route: <sip:pcgw-prim.i2.kka07.ims.mnc045.mcc404.3gppnetwork.org:5060;lr;lsstag=pps-57721-45683.55309>
+
+Server: Nokia-HPSS/3.0.3
+Content-Length: 0
+
+
+}
+SIP9:
+13:09:26.469	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 2857
+   SIP Message Logged Bytes = 2858
+   Message ID = IMS_SIP_NOTIFY
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 255
+   SIP Call ID = 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = NOTIFY sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902 SIP/2.0
+
+Via: SIP/2.0/UDP [2401:4900:c0:1::145]:6000;branch=z9hG4bK682b333106970c80bbadcb4ebf8e1fb55c54a4d8-0-98f90ac9-5d7a4386149be336;_aluscr_
+Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_3806466394-140399530657132;lsstag=pps-57721-45683.55309
+Via: SIP/2.0/UDP 169.254.253.0:5060;received=169.254.253.0;branch=z9hG4bKe360200b255ff626e5604096c81d43605c54a54f-1-7d1cf11c-5d7a43861491f7e9
+Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_3993166132-140198181377196
+Via: SIP/2.0/TCP 10.5.125.150:5090;received=10.5.125.150;branch=z9hG4bK_IMSCL1703182.000_299c917e851dc208c2ac339945f17946;lskpmc=S2I
+
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=511685114
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493483261
+
+Event: reg
+Call-ID: 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+Subscription-State: active
+
+CSeq: 1 NOTIFY
+
+Content-Type: application/reginfo+xml
+Contact: 
+<sip:skkwhncfb00-mw.ims.mnc045.mcc404.3gppnetwork.org:5090;lskpmc=S2I>
+
+Max-Forwards: 68
+Content-Length: 1616
+Record-Route: 
+<sip:pcgw-prim.i2.kka07.ims.mnc045.mcc404.3gppnetwork.org:5060;lr;lsstag=pps-57721-45683.55309>
+
+User-Agent: Nokia-HPSS v3.0.3
+
+<?xml version="1.0"?><reginfo xmlns="urn:ietf:params:xml:ns:reginfo" xmlns:gr="urn:ietf:params:xml:ns:gruuinfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ere="urn:3gpp:ns:extRegExp:1.0" xmlns:cp="urn:ietf:params:xml:ns:common-policy" xmlns:eri="urn:3gpp:ns:extRegInfo:1.0" version="0" state="full"><registration aor="sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org" id="5aa89acb2I1568293766218964" state="active"><contact id="2I1568293766218964" state="active" event="created"><uri>sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902</uri><unknown-param name="+g.3gpp.icsi-ref">urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel</unknown-param><unknown-param name="+g.3gpp.smsip"/><unknown-param name="audio"/><unknown-param name="g.3gpp.nw-init-ussi"/><unknown-param name="video"/><unknown-param name="+sip.instance">"&lt;urn:gsma:imei:86768503-007155-0&gt;"</unknown-param><unknown-param name="+g.3gpp.accesstype">cellular2</unknown-param></contact></registration><registration aor="tel:+917899632137" id="0855578b2I1568293766218964" state="active"><contact id="2I1568293766218964" state="active" event="created"><uri>sip:[2401:4900:31b6:617a:e4f6:2dee:c155:1b6f]:8902</uri><unknown-param name="+g.3gpp.icsi-ref">urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel</unknown-param><unknown-param name="+g.3gpp.smsip"/><unknown-param name="audio"/><unknown-param name="g.3gpp.nw-init-ussi"/><unknown-param name="video"/><unknown-param name="+sip.instance">"&lt;urn:gsma:imei:86768503-007155-0&gt;"</unknown-param><unknown-param name="+g.3gpp.accesstype">cellular2</unknown-param></contact></registration></reginfo>
+}
+
+SIP10:
+13:09:26.484	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 62
+   SIP Message Length = 1032
+   SIP Message Logged Bytes = 1033
+   Message ID = IMS_SIP_NOTIFY
+   Response Code = OK (200)
+   CM Call ID = 255
+   SIP Call ID = 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+   Sip Message = SIP/2.0 200 OK
+Via: 
+SIP/2.0/UDP [2401:4900:c0:1::145]:6000;branch=z9hG4bK682b333106970c80bbadcb4ebf8e1fb55c54a4d8-0-98f90ac9-5d7a4386149be336;_aluscr_,
+SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_3806466394-140399530657132;lsstag=pps-57721-45683.55309,
+SIP/2.0/UDP 169.254.253.0:5060;received=169.254.253.0;branch=z9hG4bKe360200b255ff626e5604096c81d43605c54a54f-1-7d1cf11c-5d7a43861491f7e9,
+SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_3993166132-140198181377196,
+SIP/2.0/TCP 10.5.125.150:5090;received=10.5.125.150;branch=z9hG4bK_IMSCL1703182.000_299c917e851dc208c2ac339945f17946;lskpmc=S2I
+
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=511685114
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=2493483261
+
+Call-ID: 2493483256_2328910988@2401:4900:31b6:617a:e4f6:2dee:c155:1b6f
+CSeq: 1 NOTIFY
+Content-Length: 0
+
+Record-Route: 
+
+<sip:pcgw-prim.i2.kka07.ims.mnc045.mcc404.3gppnetwork.org:5060;lr;lsstag=pps-57721-45683.55309>
+P-Access-Network-Info: 3GPP-E-UTRAN-TDD; utran-cell-id-3gpp=4044520AD012E201
+
+
+}
