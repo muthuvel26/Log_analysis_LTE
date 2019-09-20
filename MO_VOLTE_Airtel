@@ -1,0 +1,932 @@
+SIP1:
+09:48:54.810	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 1
+   SIP Call ID Length = 56
+   SIP Message Length = 2204
+   SIP Message Logged Bytes = 2205
+   Message ID = IMS_SIP_INVITE
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = INVITE tel:+917306137959 SIP/2.0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>
+CSeq: 1025168013 INVITE
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;branch=z9hG4bK464449662
+Max-Forwards: 70
+Contact: <sip:6a165b81-1afa-4bae-a057-743eb4ee2adf@[2401:4900:48c7:81c2:1:2:a669:2539]:41513>;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";audio;+g.3gpp.nw-init-ussi;+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting
+Route: <sip:[2401:4900:c0:1::2e7]:6000;lr>,<sip:pcgw-prim.i4.kka16.org:6000;lr;bidx=0>,<sip:originating@skkwhncff00-mw.ims.mnc045.mcc404.3gppnetwork.org:5090;reg-id=W2Z1568972850378760;lskpmc=SW2Z;lr;ms_rest_id=SW25d84a030>
+P-Access-Network-Info: 3GPP-E-UTRAN-FDD; utran-cell-id-3gpp=4044520AD012E20A
+Security-Verify: ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=5892751; spi-s=5892750; port-c=32805; port-s=6000
+Proxy-Require: sec-agree
+Require: sec-agree
+P-Preferred-Identity: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,PRACK,MESSAGE,REFER,NOTIFY,INFO,OPTIONS
+Content-Type: application/sdp
+Accept: application/sdp,application/3gpp-ims+xml
+P-Preferred-Service: urn:urn-7:3gpp-service.ims.icsi.mmtel
+Accept-Contact: *;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";audio
+Supported: timer,100rel,replaces,precondition,histinfo,tdialog
+P-Early-Media: supported
+Content-Length: 625
+Session-Expires: 3600;refresher=uac
+
+v=0
+o=- 2 1000 IN IP6 2401:4900:48c7:81c2:1:2:a669:2539
+s=QC VOIP
+c=IN IP6 2401:4900:48c7:81c2:1:2:a669:2539
+b=AS:49
+b=RS:600
+b=RR:2000
+t=0 0
+m=audio 50060 RTP/AVP 104 102 96 97
+b=AS:49
+b=RS:600
+b=RR:2000
+a=rtpmap:104 AMR-WB/16000/1
+a=fmtp:104 mode-change-capability=2;max-red=0
+a=rtpmap:102 AMR/8000/1
+a=fmtp:102 mode-change-capability=2;max-red=0
+a=rtpmap:96 telephone-event/16000
+a=fmtp:96 0-15
+a=rtpmap:97 telephone-event/8000
+a=fmtp:97 0-15
+a=curr:qos local none
+a=curr:qos remote none
+a=des:qos mandatory local sendrecv
+a=des:qos optional remote sendrecv
+a=sendrecv
+a=maxptime:240
+a=ptime:20
+
+}
+SIP2:
+09:48:54.909	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 423
+   SIP Message Logged Bytes = 424
+   Message ID = IMS_SIP_INVITE
+   Response Code = TRYING (100)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 100 Trying
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK464449662
+To: <tel:+917306137959>
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+CSeq: 1025168013 INVITE
+Date: Fri, 20 Sep 2019 09:48:55 GMT
+Server: Nokia-HPSS/3.0.3
+Content-Length: 0
+
+
+}
+SIP3:
+09:48:55.965	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 1
+   SIP Call ID Length = 56
+   SIP Message Length = 1432
+   SIP Message Logged Bytes = 1433
+   Message ID = IMS_SIP_INVITE
+   Response Code = SESSION_PROGRESS (183)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 183 Session Progress
+Content-Length: 472
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK464449662
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168013 INVITE
+RSeq: 1
+Contact: <sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3>
+Require: precondition,100rel
+Supported: precondition,replaces,eventlist,norefersub,tdialog
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE
+P-Early-Media: supported
+Feature-Caps: *;+g.3gpp.srvcc;+g.3gpp.srvcc-alerting
+Content-Type: application/sdp
+Server: Nokia-HPSS/3.0.3
+P-Com.Siemens.Calling-Party-ID: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+
+v=0
+o=LucentPCSF 1141392824 1141392824 IN IP6 i4.kka16.org
+s=-
+c=IN IP6 2401:4900:c0:1::2f7
+t=0 0
+a=sendrecv
+m=audio 19518 RTP/AVP 102 97
+c=IN IP6 2401:4900:c0:1::2f7
+b=RR:1087
+b=RS:362
+a=rtpmap:102 AMR/8000/1
+a=fmtp:102 mode-set=7; max-red=0
+a=rtpmap:97 telephone-event/8000
+a=fmtp:97 0-15
+a=curr:qos local sendrecv
+a=curr:qos remote none
+a=des:qos mandatory local sendrecv
+a=des:qos mandatory remote sendrecv
+a=conf:qos remote sendrecv
+a=maxptime:40
+
+}
+SIP4:
+09:48:55.982	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 790
+   SIP Message Logged Bytes = 791
+   Message ID = IMS_SIP_PRACK
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = PRACK sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3 SIP/2.0
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168014 PRACK
+Via: SIP/2.0/UDP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;branch=z9hG4bK1462857705
+Max-Forwards: 70
+P-Access-Network-Info: 3GPP-E-UTRAN-FDD; utran-cell-id-3gpp=4044520AD012E20A
+Security-Verify: ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=5892751; spi-s=5892750; port-c=32805; port-s=6000
+RAck: 1 1025168013 INVITE
+Proxy-Require: sec-agree
+Require: sec-agree
+Supported: timer
+
+
+}
+09:48:55.996	[0xB0E2]	LTE NAS ESM Plain OTA Incoming Message
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 7 (0x7)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 197 (0xc5) (Activate dedicated EPS bearer context request)
+lte_esm_msg
+  act_dedicated_eps_bearer_context_req
+    linked_eps_bearer_id = 6 (0x6) (EPS bearer identity value 6)
+    eps_qos
+      qci = 1 (0x1) (QC1)
+      oct4_incl = 1 (0x1)
+      max_bit_rate_ul = 39 (0x27) (39 kbps)
+      oct5_incl = 1 (0x1)
+      max_bit_rate_dl = 51 (0x33) (51 kbps)
+      oct6_incl = 1 (0x1)
+      guaranteed_bit_rate_ul = 39 (0x27) (39 kbps)
+      oct7_incl = 1 (0x1)
+      guaranteed_bit_rate_dl = 51 (0x33) (51 kbps)
+      oct8_incl = 0 (0x0)
+      oct9_incl = 0 (0x0)
+      oct10_incl = 0 (0x0)
+      oct11_incl = 0 (0x0)
+      oct12_incl = 0 (0x0)
+      oct13_incl = 0 (0x0)
+      oct14_incl = 0 (0x0)
+      oct15_incl = 0 (0x0)
+    tft
+      tft_op_code = 1 (0x1) (Create new TFT)
+      e_bit = 0 (0x0)
+      num_packet_filters = 4 (0x4)
+      rec[0]
+        pkt_filter_dir = 2 (0x2) (uplink only)
+        pkt_filter_id = 0 (0x0)
+        eval_prec = 191 (0xbf)
+        filter_len = 41 (0x29)
+        num_components = 4 (0x4)
+        components[0]
+          component_type_id = 32 (0x20) (IpV6 Remote Addr)
+          Ipv6_addr[0] = 36 (0x24)
+          Ipv6_addr[1] = 1 (0x1)
+          Ipv6_addr[2] = 73 (0x49)
+          Ipv6_addr[3] = 0 (0x0)
+          Ipv6_addr[4] = 0 (0x0)
+          Ipv6_addr[5] = 192 (0xc0)
+          Ipv6_addr[6] = 0 (0x0)
+          Ipv6_addr[7] = 1 (0x1)
+          Ipv6_addr[8] = 0 (0x0)
+          Ipv6_addr[9] = 0 (0x0)
+          Ipv6_addr[10] = 0 (0x0)
+          Ipv6_addr[11] = 0 (0x0)
+          Ipv6_addr[12] = 0 (0x0)
+          Ipv6_addr[13] = 0 (0x0)
+          Ipv6_addr[14] = 2 (0x2)
+          Ipv6_addr[15] = 247 (0xf7)
+          Ipv6_addr_mask[0] = 255 (0xff)
+          Ipv6_addr_mask[1] = 255 (0xff)
+          Ipv6_addr_mask[2] = 255 (0xff)
+          Ipv6_addr_mask[3] = 255 (0xff)
+          Ipv6_addr_mask[4] = 255 (0xff)
+          Ipv6_addr_mask[5] = 255 (0xff)
+          Ipv6_addr_mask[6] = 255 (0xff)
+          Ipv6_addr_mask[7] = 255 (0xff)
+          Ipv6_addr_mask[8] = 255 (0xff)
+          Ipv6_addr_mask[9] = 255 (0xff)
+          Ipv6_addr_mask[10] = 255 (0xff)
+          Ipv6_addr_mask[11] = 255 (0xff)
+          Ipv6_addr_mask[12] = 255 (0xff)
+          Ipv6_addr_mask[13] = 255 (0xff)
+          Ipv6_addr_mask[14] = 255 (0xff)
+          Ipv6_addr_mask[15] = 255 (0xff)
+        components[1]
+          component_type_id = 48 (0x30) (prot Id/Next header)
+          prot_id_or_next_header = 17 (0x11) (UDP User Datagram)
+        components[2]
+          component_type_id = 64 (0x40) (single local port)
+          local_or_remote_port = 50060 (0xc38c)
+        components[3]
+          component_type_id = 80 (0x50) (single remote port)
+          local_or_remote_port = 19518 (0x4c3e)
+      rec[1]
+        pkt_filter_dir = 1 (0x1) (downlink only)
+        pkt_filter_id = 1 (0x1)
+        eval_prec = 190 (0xbe)
+        filter_len = 41 (0x29)
+        num_components = 4 (0x4)
+        components[0]
+          component_type_id = 32 (0x20) (IpV6 Remote Addr)
+          Ipv6_addr[0] = 36 (0x24)
+          Ipv6_addr[1] = 1 (0x1)
+          Ipv6_addr[2] = 73 (0x49)
+          Ipv6_addr[3] = 0 (0x0)
+          Ipv6_addr[4] = 0 (0x0)
+          Ipv6_addr[5] = 192 (0xc0)
+          Ipv6_addr[6] = 0 (0x0)
+          Ipv6_addr[7] = 1 (0x1)
+          Ipv6_addr[8] = 0 (0x0)
+          Ipv6_addr[9] = 0 (0x0)
+          Ipv6_addr[10] = 0 (0x0)
+          Ipv6_addr[11] = 0 (0x0)
+          Ipv6_addr[12] = 0 (0x0)
+          Ipv6_addr[13] = 0 (0x0)
+          Ipv6_addr[14] = 2 (0x2)
+          Ipv6_addr[15] = 247 (0xf7)
+          Ipv6_addr_mask[0] = 255 (0xff)
+          Ipv6_addr_mask[1] = 255 (0xff)
+          Ipv6_addr_mask[2] = 255 (0xff)
+          Ipv6_addr_mask[3] = 255 (0xff)
+          Ipv6_addr_mask[4] = 255 (0xff)
+          Ipv6_addr_mask[5] = 255 (0xff)
+          Ipv6_addr_mask[6] = 255 (0xff)
+          Ipv6_addr_mask[7] = 255 (0xff)
+          Ipv6_addr_mask[8] = 255 (0xff)
+          Ipv6_addr_mask[9] = 255 (0xff)
+          Ipv6_addr_mask[10] = 255 (0xff)
+          Ipv6_addr_mask[11] = 255 (0xff)
+          Ipv6_addr_mask[12] = 255 (0xff)
+          Ipv6_addr_mask[13] = 255 (0xff)
+          Ipv6_addr_mask[14] = 255 (0xff)
+          Ipv6_addr_mask[15] = 255 (0xff)
+        components[1]
+          component_type_id = 48 (0x30) (prot Id/Next header)
+          prot_id_or_next_header = 17 (0x11) (UDP User Datagram)
+        components[2]
+          component_type_id = 64 (0x40) (single local port)
+          local_or_remote_port = 50060 (0xc38c)
+        components[3]
+          component_type_id = 80 (0x50) (single remote port)
+          local_or_remote_port = 19518 (0x4c3e)
+      rec[2]
+        pkt_filter_dir = 2 (0x2) (uplink only)
+        pkt_filter_id = 2 (0x2)
+        eval_prec = 189 (0xbd)
+        filter_len = 41 (0x29)
+        num_components = 4 (0x4)
+        components[0]
+          component_type_id = 32 (0x20) (IpV6 Remote Addr)
+          Ipv6_addr[0] = 36 (0x24)
+          Ipv6_addr[1] = 1 (0x1)
+          Ipv6_addr[2] = 73 (0x49)
+          Ipv6_addr[3] = 0 (0x0)
+          Ipv6_addr[4] = 0 (0x0)
+          Ipv6_addr[5] = 192 (0xc0)
+          Ipv6_addr[6] = 0 (0x0)
+          Ipv6_addr[7] = 1 (0x1)
+          Ipv6_addr[8] = 0 (0x0)
+          Ipv6_addr[9] = 0 (0x0)
+          Ipv6_addr[10] = 0 (0x0)
+          Ipv6_addr[11] = 0 (0x0)
+          Ipv6_addr[12] = 0 (0x0)
+          Ipv6_addr[13] = 0 (0x0)
+          Ipv6_addr[14] = 2 (0x2)
+          Ipv6_addr[15] = 247 (0xf7)
+          Ipv6_addr_mask[0] = 255 (0xff)
+          Ipv6_addr_mask[1] = 255 (0xff)
+          Ipv6_addr_mask[2] = 255 (0xff)
+          Ipv6_addr_mask[3] = 255 (0xff)
+          Ipv6_addr_mask[4] = 255 (0xff)
+          Ipv6_addr_mask[5] = 255 (0xff)
+          Ipv6_addr_mask[6] = 255 (0xff)
+          Ipv6_addr_mask[7] = 255 (0xff)
+          Ipv6_addr_mask[8] = 255 (0xff)
+          Ipv6_addr_mask[9] = 255 (0xff)
+          Ipv6_addr_mask[10] = 255 (0xff)
+          Ipv6_addr_mask[11] = 255 (0xff)
+          Ipv6_addr_mask[12] = 255 (0xff)
+          Ipv6_addr_mask[13] = 255 (0xff)
+          Ipv6_addr_mask[14] = 255 (0xff)
+          Ipv6_addr_mask[15] = 255 (0xff)
+        components[1]
+          component_type_id = 48 (0x30) (prot Id/Next header)
+          prot_id_or_next_header = 17 (0x11) (UDP User Datagram)
+        components[2]
+          component_type_id = 64 (0x40) (single local port)
+          local_or_remote_port = 50061 (0xc38d)
+        components[3]
+          component_type_id = 80 (0x50) (single remote port)
+          local_or_remote_port = 19519 (0x4c3f)
+      rec[3]
+        pkt_filter_dir = 1 (0x1) (downlink only)
+        pkt_filter_id = 3 (0x3)
+        eval_prec = 188 (0xbc)
+        filter_len = 41 (0x29)
+        num_components = 4 (0x4)
+        components[0]
+          component_type_id = 32 (0x20) (IpV6 Remote Addr)
+          Ipv6_addr[0] = 36 (0x24)
+          Ipv6_addr[1] = 1 (0x1)
+          Ipv6_addr[2] = 73 (0x49)
+          Ipv6_addr[3] = 0 (0x0)
+          Ipv6_addr[4] = 0 (0x0)
+          Ipv6_addr[5] = 192 (0xc0)
+          Ipv6_addr[6] = 0 (0x0)
+          Ipv6_addr[7] = 1 (0x1)
+          Ipv6_addr[8] = 0 (0x0)
+          Ipv6_addr[9] = 0 (0x0)
+          Ipv6_addr[10] = 0 (0x0)
+          Ipv6_addr[11] = 0 (0x0)
+          Ipv6_addr[12] = 0 (0x0)
+          Ipv6_addr[13] = 0 (0x0)
+          Ipv6_addr[14] = 2 (0x2)
+          Ipv6_addr[15] = 247 (0xf7)
+          Ipv6_addr_mask[0] = 255 (0xff)
+          Ipv6_addr_mask[1] = 255 (0xff)
+          Ipv6_addr_mask[2] = 255 (0xff)
+          Ipv6_addr_mask[3] = 255 (0xff)
+          Ipv6_addr_mask[4] = 255 (0xff)
+          Ipv6_addr_mask[5] = 255 (0xff)
+          Ipv6_addr_mask[6] = 255 (0xff)
+          Ipv6_addr_mask[7] = 255 (0xff)
+          Ipv6_addr_mask[8] = 255 (0xff)
+          Ipv6_addr_mask[9] = 255 (0xff)
+          Ipv6_addr_mask[10] = 255 (0xff)
+          Ipv6_addr_mask[11] = 255 (0xff)
+          Ipv6_addr_mask[12] = 255 (0xff)
+          Ipv6_addr_mask[13] = 255 (0xff)
+          Ipv6_addr_mask[14] = 255 (0xff)
+          Ipv6_addr_mask[15] = 255 (0xff)
+        components[1]
+          component_type_id = 48 (0x30) (prot Id/Next header)
+          prot_id_or_next_header = 17 (0x11) (UDP User Datagram)
+        components[2]
+          component_type_id = 64 (0x40) (single local port)
+          local_or_remote_port = 50061 (0xc38d)
+        components[3]
+          component_type_id = 80 (0x50) (single remote port)
+          local_or_remote_port = 19519 (0x4c3f)
+    trans_id_incl = 1 (0x1)
+    trans_id
+      length = 1 (0x1)
+      ti_flag = 0 (0x0)
+      ti_value = 2 (0x2)
+    qos_incl = 1 (0x1)
+    qos
+      delay_class = 1 (0x1) (Delay class 1)
+      reliability_class = 4 (0x4) (Unacknowledged GTP, LLC, and RLC, Protected data)
+      peak_throughput = 3 (0x3) (Up to 4 000 octet/s)
+      precedence_class = 1 (0x1) (High priority)
+      mean_throughput = 31 (0x1f) (Best effort)
+      traffic_class = 1 (0x1) (Conversational class)
+      delivery_order = 2 (0x2) (Without delivery order ('no'))
+      delivery_err_sdu = 1 (0x1) (No detect ('-'))
+      max_sdu_size = 150 (0x96) (1500 octets)
+      max_bitrate_uplink = 39 (0x27) (39 kbps)
+      max_bitrate_downlink = 51 (0x33) (51 kbps)
+      residual_ber = 7 (0x7) (1*10^(-5))
+      sdu_error_ratio = 1 (0x1) (1*10^(-2))
+      transfer_delay = 10 (0xa) (100 ms)
+      traffic_hand_pri = 3 (0x3) (Priority level 3)
+      guar_bitrate_uplink = 39 (0x27) (39 kbps)
+      guar_bitrate_downlink = 51 (0x33) (51 kbps)
+      signalling_ind = 0 (0x0) (Not optimised for signalling traffic)
+      source_stat_desc = 1 (0x1) (unknown)
+      downlink_ext_incl = 1 (0x1)
+      max_bitrate_downlink_ext = 0 (0x0) (Use value in oct 9)
+      guar_bitrate_downlink_ext = 0 (0x0) (Use value in oct 13)
+      uplink_ext_incl = 1 (0x1)
+      max_bitrate_uplink_ext = 0 (0x0) (Use value in oct 8)
+      guar_bitrate_uplink_ext = 0 (0x0) (Use value in oct 12)
+    llc_sapi_incl = 1 (0x1)
+    llc_sapi
+      llc_sapi_value = 9 (0x9)
+    radio_priority_incl = 1 (0x1)
+    radio_priority
+      radio_pri_val = 2 (0x2)
+    pkt_flow_id_incl = 1 (0x1)
+    pkt_flow_id
+      length = 1 (0x1)
+      packet_flow_id = 10 (0xa)
+    prot_config_incl = 0 (0x0)
+    wlan_offload_acceptability_incl = 0 (0x0)
+    nbifom_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
+    ext_eps_qos_incl = 0 (0x0)
+	
+
+09:48:56.022	[0xB0E3]	LTE NAS ESM Plain OTA Outgoing Message
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 7 (0x7)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 198 (0xc6) (Activate dedicated EPS bearer context accept)
+lte_esm_msg
+  act_dedicated_eps_bearer_context_accept
+    prot_config_incl = 0 (0x0)
+    nbifom_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
+
+SIP5
+09:48:56.064	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 724
+   SIP Message Logged Bytes = 725
+   Message ID = IMS_SIP_PRACK
+   Response Code = OK (200)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 200 OK
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/UDP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK1462857705
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168014 PRACK
+Supported: precondition,replaces,eventlist,norefersub
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE
+Accept: application/sdp
+Server: Nokia-HPSS/3.0.3
+Contact: <sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3>
+
+
+}
+SIP6:
+09:48:56.086	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 1
+   SIP Call ID Length = 56
+   SIP Message Length = 1612
+   SIP Message Logged Bytes = 1613
+   Message ID = IMS_SIP_UPDATE
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = UPDATE sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3 SIP/2.0
+Content-Length: 511
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168015 UPDATE
+Accept: application/sdp
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;branch=z9hG4bK2295783415
+Max-Forwards: 70
+P-Access-Network-Info: 3GPP-E-UTRAN-FDD; utran-cell-id-3gpp=4044520AD012E20A
+Security-Verify: ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=5892751; spi-s=5892750; port-c=32805; port-s=6000
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,PRACK,MESSAGE,REFER,NOTIFY,INFO,OPTIONS
+Content-Type: application/sdp
+Require: sec-agree,precondition
+Proxy-Require: sec-agree
+Contact: <sip:6a165b81-1afa-4bae-a057-743eb4ee2adf@[2401:4900:48c7:81c2:1:2:a669:2539]:41513>;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";audio;+g.3gpp.nw-init-ussi;+g.3gpp.srvcc-alerting
+
+v=0
+o=- 2 1001 IN IP6 2401:4900:48c7:81c2:1:2:a669:2539
+s=QC VOIP
+c=IN IP6 2401:4900:48c7:81c2:1:2:a669:2539
+b=AS:37
+b=RS:600
+b=RR:2000
+t=0 0
+m=audio 50060 RTP/AVP 102 97
+b=AS:37
+b=RS:600
+b=RR:2000
+a=rtpmap:102 AMR/8000/1
+a=fmtp:102 mode-set=7;mode-change-capability=2;max-red=0
+a=rtpmap:97 telephone-event/8000
+a=fmtp:97 0-15
+a=curr:qos local sendrecv
+a=curr:qos remote sendrecv
+a=des:qos mandatory local sendrecv
+a=des:qos mandatory remote sendrecv
+a=sendrecv
+a=maxptime:240
+a=ptime:20
+
+}
+SIP7:
+09:48:56.324	[0xB0E2]	LTE NAS ESM Plain OTA Incoming Message
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 7 (0x7)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 201 (0xc9) (Modify EPS bearer context request)
+lte_esm_msg
+  mod_eps_bearer_context_req
+    eps_qos_incl = 1 (0x1)
+    eps_qos
+      qci = 1 (0x1) (QC1)
+      oct4_incl = 1 (0x1)
+      max_bit_rate_ul = 39 (0x27) (39 kbps)
+      oct5_incl = 1 (0x1)
+      max_bit_rate_dl = 39 (0x27) (39 kbps)
+      oct6_incl = 1 (0x1)
+      guaranteed_bit_rate_ul = 39 (0x27) (39 kbps)
+      oct7_incl = 1 (0x1)
+      guaranteed_bit_rate_dl = 39 (0x27) (39 kbps)
+      oct8_incl = 0 (0x0)
+      oct9_incl = 0 (0x0)
+      oct10_incl = 0 (0x0)
+      oct11_incl = 0 (0x0)
+      oct12_incl = 0 (0x0)
+      oct13_incl = 0 (0x0)
+      oct14_incl = 0 (0x0)
+      oct15_incl = 0 (0x0)
+    tft_incl = 0 (0x0)
+    qos_incl = 1 (0x1)
+    qos
+      delay_class = 1 (0x1) (Delay class 1)
+      reliability_class = 4 (0x4) (Unacknowledged GTP, LLC, and RLC, Protected data)
+      peak_throughput = 3 (0x3) (Up to 4 000 octet/s)
+      precedence_class = 1 (0x1) (High priority)
+      mean_throughput = 31 (0x1f) (Best effort)
+      traffic_class = 1 (0x1) (Conversational class)
+      delivery_order = 2 (0x2) (Without delivery order ('no'))
+      delivery_err_sdu = 1 (0x1) (No detect ('-'))
+      max_sdu_size = 150 (0x96) (1500 octets)
+      max_bitrate_uplink = 39 (0x27) (39 kbps)
+      max_bitrate_downlink = 39 (0x27) (39 kbps)
+      residual_ber = 7 (0x7) (1*10^(-5))
+      sdu_error_ratio = 1 (0x1) (1*10^(-2))
+      transfer_delay = 10 (0xa) (100 ms)
+      traffic_hand_pri = 3 (0x3) (Priority level 3)
+      guar_bitrate_uplink = 39 (0x27) (39 kbps)
+      guar_bitrate_downlink = 39 (0x27) (39 kbps)
+      signalling_ind = 0 (0x0) (Not optimised for signalling traffic)
+      source_stat_desc = 1 (0x1) (unknown)
+      downlink_ext_incl = 1 (0x1)
+      max_bitrate_downlink_ext = 0 (0x0) (Use value in oct 9)
+      guar_bitrate_downlink_ext = 0 (0x0) (Use value in oct 13)
+      uplink_ext_incl = 1 (0x1)
+      max_bitrate_uplink_ext = 0 (0x0) (Use value in oct 8)
+      guar_bitrate_uplink_ext = 0 (0x0) (Use value in oct 12)
+    llc_sapi_incl = 1 (0x1)
+    llc_sapi
+      llc_sapi_value = 9 (0x9)
+    radio_pri_incl = 1 (0x1)
+    radio_priority
+      radio_pri_val = 2 (0x2)
+    pkt_flow_id_incl = 1 (0x1)
+    pkt_flow_id
+      length = 1 (0x1)
+      packet_flow_id = 10 (0xa)
+    apn_ambr_incl = 0 (0x0)
+    prot_config_incl = 0 (0x0)
+    wlan_offload_acceptability_incl = 0 (0x0)
+    nbifom_incl = 0 (0x0)
+    header_compression_config_inclu = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
+    ext_apn_ambr_incl = 0 (0x0)
+    ext_eps_qos_incl = 0 (0x0)
+SIP8:
+09:48:56.335	[0xB0E3]	LTE NAS ESM Plain OTA Outgoing Message
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 7 (0x7)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 202 (0xca) (Modify EPS bearer context accept)
+lte_esm_msg
+  mod_eps_bearer_acc
+    prot_config_incl = 0 (0x0)
+    nbifom_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
+sip9:
+09:48:56.349	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 1
+   SIP Call ID Length = 56
+   SIP Message Length = 1206
+   SIP Message Logged Bytes = 1207
+   Message ID = IMS_SIP_UPDATE
+   Response Code = OK (200)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 200 OK
+Content-Length: 448
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK2295783415
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168015 UPDATE
+Contact: <sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3>
+Supported: precondition,replaces,eventlist,norefersub
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE
+Content-Type: application/sdp
+Accept: application/sdp
+Server: Nokia-HPSS/3.0.3
+
+v=0
+o=LucentPCSF 1141392824 1141392825 IN IP6 i4.kka16.org
+s=-
+c=IN IP6 2401:4900:c0:1::2f7
+t=0 0
+a=sendrecv
+m=audio 19518 RTP/AVP 102 97
+c=IN IP6 2401:4900:c0:1::2f7
+b=RR:1087
+b=RS:362
+a=rtpmap:102 AMR/8000/1
+a=fmtp:102 mode-set=7; max-red=0
+a=rtpmap:97 telephone-event/8000
+a=fmtp:97 0-15
+a=curr:qos local sendrecv
+a=curr:qos remote sendrecv
+a=des:qos mandatory local sendrecv
+a=des:qos mandatory remote sendrecv
+a=maxptime:40
+
+}
+sip10:
+09:48:56.393	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 887
+   SIP Message Logged Bytes = 888
+   Message ID = IMS_SIP_INVITE
+   Response Code = SESSION_PROGRESS (183)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 183 Session Progress
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK464449662
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168013 INVITE
+Contact: <sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3>
+Supported: precondition,replaces,eventlist,norefersub,tdialog
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE
+P-Early-Media: inactive
+Feature-Caps: *;+g.3gpp.srvcc;+g.3gpp.srvcc-alerting
+Server: Nokia-HPSS/3.0.3
+P-Com.Siemens.Calling-Party-ID: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+
+
+}
+sip11:
+09:48:57.382	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 939
+   SIP Message Logged Bytes = 940
+   Message ID = IMS_SIP_INVITE
+   Response Code = RINGING (180)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 180 Ringing
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK464449662
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168013 INVITE
+Contact: <sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3>
+Supported: precondition,replaces,eventlist,norefersub,tdialog
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE
+P-Early-Media: inactive
+Feature-Caps: *;+g.3gpp.srvcc;+g.3gpp.srvcc-alerting;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel"
+Server: Nokia-HPSS/3.0.3
+P-Com.Siemens.Calling-Party-ID: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+
+
+}
+sip12:
+09:49:01.737	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 1010
+   SIP Message Logged Bytes = 1011
+   Message ID = IMS_SIP_INVITE
+   Response Code = OK (200)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 200 OK
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/TCP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK464449662
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168013 INVITE
+Session-Expires: 3600;refresher=uac
+Contact: <sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3>
+Supported: precondition,replaces,eventlist,norefersub,tdialog,timer
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE
+Feature-Caps: *;+g.3gpp.srvcc;+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel"
+Accept: application/sdp
+Server: Nokia-HPSS/3.0.3
+Require: timer
+P-Com.Siemens.Calling-Party-ID: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>
+
+
+}
+sip13:
+09:49:01.750	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 553
+   SIP Message Logged Bytes = 554
+   Message ID = IMS_SIP_ACK
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = ACK sip:pcgw-prim.i4.kka16.org:6000;yop=00.00.1B304EE2.0000.700E;encoded-parm=QbkRBthOEgsTXlRWSV1HW1lZQ1dVRUFEQ08BBBYWCgouMDd5MSU3 SIP/2.0
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+To: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+Via: SIP/2.0/UDP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;branch=z9hG4bK4090612997
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1025168013 ACK
+Require: sec-agree
+Max-Forwards: 70
+Proxy-Require: sec-agree
+
+
+}
+sip14:
+09:49:01.773	[0x1830]	IMS VoLTE Session Setup
+Version = 2
+Version 2 {
+   Dialled String Length = 17
+   Dialled String = tel:+917306137959
+   Direction = MO
+   Call Id Length = 55
+   Call Id = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Type = 0
+   Originating Uri Length = 51
+   Originating Uri = sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org
+   Terminating Uri Length = 17
+   Terminating Uri = tel:+917306137959
+   Result = OK
+   Call Setup Delay = 2575
+   Rat = DCM_RAT_LTE
+}
+sip15:
+09:49:05.369	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 757
+   SIP Message Logged Bytes = 758
+   Message ID = IMS_SIP_BYE
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = BYE sip:6a165b81-1afa-4bae-a057-743eb4ee2adf@[2401:4900:48c7:81c2:1:2:a669:2539]:41513 SIP/2.0
+Via: SIP/2.0/UDP [2401:4900:c0:1::2e7]:6000;branch=z9hG4bKda2847db2a810c328745ffa9f7ede5be5c8179a7-0-528854b7-5d84a0926e5f8cd;_aluscr_
+Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_1568972946-115487-871399470-LucentPCSF;e2ecallid=06bbd036
+Content-Length: 0
+From: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1 BYE
+Max-Forwards: 68
+Reason: X.int;reasoncode=0x00000000;add-info=05CC.0001.0001
+Reason: Q.850;cause=16
+Request-Disposition: no-fork
+User-Agent: Nokia-HPSS v3.0.3
+
+
+}
+sip16:
+09:49:05.376	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 585
+   SIP Message Logged Bytes = 586
+   Message ID = IMS_SIP_BYE
+   Response Code = OK (200)
+   CM Call ID = 4
+   SIP Call ID = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 200 OK
+Via: SIP/2.0/UDP [2401:4900:c0:1::2e7]:6000;branch=z9hG4bKda2847db2a810c328745ffa9f7ede5be5c8179a7-0-528854b7-5d84a0926e5f8cd;_aluscr_,SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_1568972946-115487-871399470-LucentPCSF;e2ecallid=06bbd036
+Content-Length: 0
+From: <tel:+917306137959>;tag=5c8179a7-5d84a0872758d25d-gm-po-lucentPCSF-109846
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3172651669
+Call-ID: 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1 BYE
+P-Access-Network-Info: 3GPP-E-UTRAN-FDD; utran-cell-id-3gpp=4044520AD012E20A
+
+
+}
+sip17
+09:49:05.385	[0x1831]	IMS VoLTE Session End
+Version = 2
+Version 2 {
+   Dialled String Length = 51
+   Dialled String = sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org
+   Direction = MO
+   Call Id Length = 55
+   Call Id = 3172651661_2340559020@2401:4900:48c7:81c2:1:2:a669:2539
+   Type = 0
+   Originating Uri Length = 17
+   Originating Uri = tel:+917306137959
+   Terminating Uri Length = 51
+   Terminating Uri = sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org
+   End Cause = MT initiated
+   Call Setup Delay = 2575
+   Rat = DCM_RAT_LTE
+}
+#################################################################################################
+09:49:05.394	[0xB0E2]	LTE NAS ESM Plain OTA Incoming Message
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 7 (0x7)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 205 (0xcd) (Deactivate EPS bearer context request)
+lte_esm_msg
+  deact_eps_bearer_req
+    esm_cause
+      esm_cause = 36 (0x24) (Regular deactivation)
+    prot_config_incl = 0 (0x0)
+    t3396_incl = 0 (0x0)
+    wlan_offload_acceptability_incl = 0 (0x0)
+    nbifom_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
+
+	#######################################################################################
+09:49:05.400	[0xB0E3]	LTE NAS ESM Plain OTA Outgoing Message
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 7 (0x7)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 206 (0xce) (Deactivate EPS bearer context accept)
+lte_esm_msg
+  deact_eps_bearer_accept
+    prot_config_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
