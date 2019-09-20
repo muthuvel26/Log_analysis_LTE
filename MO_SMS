@@ -1,0 +1,123 @@
+10:14:42.448	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 887
+   SIP Message Logged Bytes = 888
+   Message ID = IMS_SIP_MESSAGE
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 255
+   SIP Call ID = 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = MESSAGE tel:+919845087001 SIP/2.0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3174199309
+To: <tel:+919845087001>
+CSeq: 1026715655 MESSAGE
+Call-ID: 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+Via: SIP/2.0/UDP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;branch=z9hG4bK828983767
+Max-Forwards: 70
+Route: <sip:[2401:4900:c0:1::2e7]:6000;lr>,<sip:pcgw-prim.i4.kka16.org:6000;lr;bidx=0>,<sip:originating@skkwhncff00-mw.ims.mnc045.mcc404.3gppnetwork.org:5090;reg-id=W2Z1568972850378760;lskpmc=SW2Z;lr;ms_rest_id=SW25d84a030>
+P-Access-Network-Info: 3GPP-E-UTRAN-FDD; utran-cell-id-3gpp=4044520AD012E20A
+Security-Verify: ipsec-3gpp; q=0.1; alg=hmac-md5-96; spi-c=5892751; spi-s=5892750; port-c=32805; port-s=6000
+Content-Type: application/vnd.3gpp.sms
+Allow: MESSAGE
+Request-Disposition: no-fork
+Content-Length: 36
+
+
+}
+SIP2:
+10:14:42.637	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 410
+   SIP Message Logged Bytes = 411
+   Message ID = IMS_SIP_MESSAGE
+   Response Code = ACCEPTED (202)
+   CM Call ID = 255
+   SIP Call ID = 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 202 Accepted
+Content-Length: 0
+From: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org>;tag=3174199309
+To: <tel:+919845087001>;tag=XZeZBb14a461e1Xc
+Via: SIP/2.0/UDP [2401:4900:48c7:81c2:1:2:a669:2539]:41513;received=2401:4900:48c7:81c2:1:2:a669:2539;branch=z9hG4bK828983767
+Call-ID: 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1026715655 MESSAGE
+Server: Nokia-HPSS/3.0.3
+
+
+}
+SIP3:
+10:14:43.030	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = NETWORK_TO_UE
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 1474
+   SIP Message Logged Bytes = 1475
+   Message ID = IMS_SIP_MESSAGE
+   Response Code = INFORMAL_RESPONSE (0)
+   CM Call ID = 255
+   SIP Call ID = 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = MESSAGE sip:6a165b81-1afa-4bae-a057-743eb4ee2adf@[2401:4900:48c7:81c2:1:2:a669:2539]:41513 SIP/2.0
+Via: SIP/2.0/UDP [2401:4900:c0:1::2e7]:6000;branch=z9hG4bK561ce2b997e67818fcbd517e915683485c8179a7-0-528adaff-5d84a69328fec828;_aluscr_
+Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_61804023-139625375856044;lsstag=pt-31.54107
+Via: SIP/2.0/UDP 169.254.253.0:5060;received=169.254.253.0;branch=z9hG4bK468a0dc1c50775e4d15a932a4fd6c1485d40a3f0-0-7470eaaa-5d84a69328e9c6ab
+Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_3127018583-139689124414636
+Via: SIP/2.0/TCP 10.92.40.101:5090;received=10.92.40.101;branch=z9hG4bK_IMSCL1851327.000_c9a630f91bd0297113931e267fac3aca;lskpmc=SW2Z
+Via: SIP/2.0/TCP 10.5.125.9:5060;branch=z9hG4bK7dDbf0dYDeXgeCeB;yop=00.00.1B304EE2.0000.7022;ld_id=18
+Content-Length: 13
+From: <sip:10.5.125.10>;tag=XZeZBb14a461e1Xc
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org;user=phone>
+Call-ID: 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1 MESSAGE
+Max-Forwards: 65
+Request-Disposition: no-fork
+P-Asserted-Identity: <sip:10.5.125.10>
+Accept-Contact: *;+g.3gpp.smsip;require;explicit
+Reject-Contact: *;+g.3gpp.ics="server"
+In-Reply-To: 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+Content-Type: application/vnd.3gpp.sms
+Content-Disposition: render;handling=optional;sms
+P-Called-Party-ID: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org;user=phone>
+User-Agent: Nokia-HPSS v3.0.3
+
+A	
+}
+SIP4:
+10:14:43.043	[0x156E]	IMS SIP Message
+Version = 1
+Version 1 {
+   Direction = UE_TO_NETWORK
+   SDP Presence = 0
+   SIP Call ID Length = 56
+   SIP Message Length = 1088
+   SIP Message Logged Bytes = 1089
+   Message ID = IMS_SIP_MESSAGE
+   Response Code = OK (200)
+   CM Call ID = 255
+   SIP Call ID = 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+   Sip Message = SIP/2.0 200 OK
+Via: SIP/2.0/UDP [2401:4900:c0:1::2e7]:6000;branch=z9hG4bK561ce2b997e67818fcbd517e915683485c8179a7-0-528adaff-5d84a69328fec828;_aluscr_,SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_61804023-139625375856044;lsstag=pt-31.54107,SIP/2.0/UDP 169.254.253.0:5060;received=169.254.253.0;branch=z9hG4bK468a0dc1c50775e4d15a932a4fd6c1485d40a3f0-0-7470eaaa-5d84a69328e9c6ab,SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK_0001_3127018583-139689124414636,SIP/2.0/TCP 10.92.40.101:5090;received=10.92.40.101;branch=z9hG4bK_IMSCL1851327.000_c9a630f91bd0297113931e267fac3aca;lskpmc=SW2Z,SIP/2.0/TCP 10.5.125.9:5060;branch=z9hG4bK7dDbf0dYDeXgeCeB;yop=00.00.1B304EE2.0000.7022;ld_id=18
+Content-Length: 0
+From: <sip:10.5.125.10>;tag=XZeZBb14a461e1Xc
+To: <sip:+917899632137@ims.mnc045.mcc404.3gppnetwork.org;user=phone>;tag=3174199906
+Call-ID: 3174199303_2340624060@2401:4900:48c7:81c2:1:2:a669:2539
+CSeq: 1 MESSAGE
+P-Access-Network-Info: 3GPP-E-UTRAN-FDD; utran-cell-id-3gpp=4044520AD012E20A
+Supported: 100rel,tdialog
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,PRACK,MESSAGE,REFER,NOTIFY,INFO,OPTIONS
+
+
+}
+#####################################################################################################################################################################################################################
+MT SMS
+DL
+UL
+UL
+DL
